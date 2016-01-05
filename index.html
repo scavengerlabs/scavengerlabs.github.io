@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<body>
+
+<head>
+  <title>Scavenger Labs</title>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+  <style>
+    body {
+      margin: 0px;
+      font-family: 'Open Sans';
+    }
+    div.container {
+      width: 1000px;
+      margin: auto;
+      padding: 10px;
+    }
+    div.header {
+      position: fixed;
+      width: 100%;
+      background-color: #FFFFFF;
+      z-index: 1;
+    }
+    div.header-spacer {
+      height: 125px;
+    }
+    div.navbar {
+      color: #00B400;
+      border-bottom: 1px solid #AAAAAA;
+      border-top: 1px solid #AAAAAA;
+    }
+    a.navlink {
+      text-decoration: none;
+      color: inherit;
+      margin-right: 20px;
+    }
+    div.banner {
+      padding-bottom: 10px;
+    }
+    div.logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+    }
+    div.bannertitle {
+      vertical-align: bottom;
+      margin-left: 20px;
+      display: inline;
+      font-size: 30px;
+      font-family: 'Special Elite';
+      letter-spacing: 10px;
+      color: black;
+    }
+    div.block {
+      letter-spacing: 1px;
+    }
+    div.background {
+      position: absolute;
+      right: 0px;
+      top: 125px;
+      opacity: 0.25;
+      z-index: -1;
+    }
+    a.link {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .line {
+      fill-opacity: 0;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    .thick {
+      stroke-width: 7;
+    }
+    .green {
+      stroke: rgb(0, 190, 0);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class='background'>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 300px; height: 300px;">
+    <g transform="scale(3)" style="stroke:rgb(0, 0, 0);">
+      <path class="thick line" d="M 60 20  L 70 8 L 30 8 L 40 20 L 80 70 C 84 75 92 92 70 92 L 30 92 C 8 92 16 75 20 70 L 40 45" />
+      <path class="thick green line" d="M 35 70 L 65 70" />
+      <path class="thick green line" d="M 26 81 L 74 81" />
+    </g>
+  </svg>
+</div>
+
+<div class='header'>
+  <div class='container'>
+    <div class='banner'>
+      <div class='logo'>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 50px; height: 50px;">
+          <g transform="scale(0.5)" style="stroke:rgb(0, 0, 0);">
+            <path class="thick line" d="M 60 20  L 70 8 L 30 8 L 40 20 L 80 70 C 84 75 92 92 70 92 L 30 92 C 8 92 16 75 20 70 L 40 45" />
+            <path class="thick green line" d="M 35 70 L 65 70" />
+            <path class="thick green line" d="M 26 81 L 74 81" />
+          </g>
+        </svg>
+      </div>
+
+      <div class='bannertitle'>Scavenger Labs</div>
+    </div>
+  </div>
+
+  <div class='navbar'>
+    <div class='container'>
+      <a class='navlink' href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class='header-spacer'>
+</div>
+
+<div id="contact" class='block'>
+  <div class='container'>
+    <h2>Contact</h2>
+    <script>
+        var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        var user = [9, 4, 17, 4, 12, 24];
+        var domain = [18, 2, 0, 21, 4, 13, 6, 4, 17, 11, 0, 1, 18];
+        var string = "";
+        for(var i = 0; i < user.length; i++)
+            string += letters[user[i]];
+        string += "@";
+        for(var i = 0; i < domain.length; i++)
+            string += letters[domain[i]];
+        string += ".com";
+        document.write(string);
+    </script>
+    <br/>
+    <a href="https://github.com/scavengerlabs">github.com/scavengerlabs</a>
+  </div>
+</div>
+
+</body>
+</html>
